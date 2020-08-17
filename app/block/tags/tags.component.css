@@ -1,0 +1,26 @@
+
+.ro-tag-wrapper{
+    position: relative;
+}
+.ro-tags{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid thin #ccc;
+}
+.ro-tag{
+    padding: 8px 15px;
+    border: solid thin #eee;
+    border-radius: 20px;
+}
+.ro-tag.selected{
+    background:#ddd;
+}
+.ro-tag-input{
+    width: 100px !important;
+    border: none !important;
+    border-radius: 0px !important;
+    margin:0px 10px;
+}
+input:focus{
+    outline: none;
+}

@@ -1,0 +1,9 @@
+<div class="ro-tag-wrapper">
+    <div class="ro-tags">
+        <div *ngFor="let item of hashTags; let index=index" [ngClass]="{'selected':item.selected}" class="ro-tag">
+            #{{item.value}}
+            <a (click)="remove(index)" href="javascript://">X</a>
+        </div>
+        <input class="ro-tag-input" type="text" [(ngModel)]="newTag.value" (keyup)="keyEvent($event)" placeholder="+ Tags">
+    </div>
+</div>
